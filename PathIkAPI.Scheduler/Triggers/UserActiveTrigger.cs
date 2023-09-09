@@ -35,7 +35,7 @@ namespace PathIkAPI.Scheduler.Triggers
 
             ISimpleTrigger TriggerDersGorev = (ISimpleTrigger)TriggerBuilder
                 .Create()
-                .WithIdentity("DersGorev")
+                .WithIdentity("UserActiveJob")
                 .StartAt(DateTime.UtcNow.AddMilliseconds(3000))
                 .WithSimpleSchedule(x => 
                     x.WithIntervalInSeconds(5)
